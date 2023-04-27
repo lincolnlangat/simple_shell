@@ -11,7 +11,7 @@
 #include <limits.h>
 #include <fcntl.h>
 #include <errno.h>
-#include <stdio.h>
+#
 
 void print_name(char *n);
 
