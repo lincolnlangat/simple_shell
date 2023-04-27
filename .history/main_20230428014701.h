@@ -223,7 +223,6 @@ void find_cmd(info_t *);
 void fork_cmd(info_t *);
 
 /* file tokenizer.c */
-char **strtow(char *, char *);
-char **strtow2(char *, char);
+
 
 #endif
