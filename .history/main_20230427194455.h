@@ -35,7 +35,7 @@ void print_name(char *n);
 
 /* history configs */
 #define HIST_FILE   "~/.history"
-#define HIST_MAX    4096
+#define HIST_MAS    4096
 
 /* globally accessible env pointer */
 extern char **environ;

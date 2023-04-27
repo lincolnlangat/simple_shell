@@ -35,7 +35,7 @@ void print_name(char *n);
 
 /* history configs */
 #define HIST_FILE   "~/.history"
-#define HIST_MAX    4096
+#define HIST_MAS    4096
 
 /* globally accessible env pointer */
 extern char **environ;
@@ -170,9 +170,6 @@ void clear_info(info_t *);
 void set_info(info_t *, char **);
 void free_info(info_t *, int);
 
-/* file getLine.c */
-ssize_t get_input(info_t *);
-int _getline(info_t *, char **, size_t *);
-void sigintHandler(int);
+/
 
 #endif
