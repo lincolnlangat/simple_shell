@@ -188,6 +188,5 @@ int build_history_list(info_t *info, char *buf, int linecount);
 int renumber_history(info_t *info);
 
 /* file memory.c */
-int bfree(void **);
 
 #endif
