@@ -226,11 +226,6 @@ void fork_cmd(info_t *);
 char **strtow(char *, char *);
 char **strtow2(char *, char);
 
-/* file vars.c */
-int is_chain(info_t *, char *, size_t *);
-void check_chain(info_t *, char *, size_t *, size_t, size_t);
-int replace_alias(info_t *);
-int replace_vars(info_t *);
-int replace_string(char **, char *);
+/
 
 #endif
