@@ -37,9 +37,6 @@ void print_name(char *n);
 #define HIST_FILE   "~/.history"
 #define HIST_MAX    4096
 
-#define SIGINT		 2
-#define S_IFREG  0100000
-
 /* globally accessible env pointer */
 extern char **environ;
 
@@ -104,19 +101,6 @@ typedef struct passinfo
 #define INFO_INIT \
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
     0, 0, 0}
-
-
-/**
- *struct builtin - contains a builtin string and related function
- *@type: the builtin command flag
- *@func: the function
- */
-typedef struct builtin
-{
-	char *type;
-	int (*func)(info_t *);
-} builtin_table;
-
 /*file errors.c*/
 void _eputs(char *str);
 int _eputchar(char c);
@@ -207,8 +191,5 @@ int renumber_history(info_t *info);
 int bfree(void **);
 
 /* file parser.c */
-int is_cmd(info_t *, char *);
-char *dup_chars(char *, int, int);
-char *find_path(info_t *, char *, char *);
 
 #endif
