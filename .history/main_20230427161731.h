@@ -137,8 +137,6 @@ int _myexit(info_t *);
 int _mycd(info_t *);
 int _myhelp(info_t *);
 
-/* file builtin1.c */
-int _myhistory(info_t *);
-int _myalias(info_t *);
+/* */
 
 #endif
