@@ -7,5 +7,5 @@
 */
 void print_name(char *n)
 {
-	printf("%s\n", n);
+		printf("%s\n", n);
 }
