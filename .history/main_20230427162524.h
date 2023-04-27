@@ -142,10 +142,6 @@ int _myhistory(info_t *);
 int _myalias(info_t *);
 
 /* file errors1.c*/
-int _erratoi(char *);
-void print_error(info_t *, char *);
-int print_d(int, int);
-char *convert_number(long int, int, int);
-void remove_comments(char *);
+
 
 #endif
