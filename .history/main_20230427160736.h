@@ -121,9 +121,6 @@ size_t print_list_str(const list_t *h);
 int delete_node_at_index(list_t **head, unsigned int index);
 void free_list(list_t **head_ptr);
 
-/* file getenv.c */
-char **get_environ(info_t *);
-int _unsetenv(info_t *, char *);
-int _setenv(info_t *, char *, char *);
+/**/
 
 #endif
