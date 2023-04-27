@@ -101,7 +101,7 @@ typedef struct passinfo
 #define INFO_INIT \
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
     0, 0, 0}
-/*file errors.c*/
+/*file error*/
 void _eputs(char *str);
 int _eputchar(char c);
 int _putfd(char c, int fd);

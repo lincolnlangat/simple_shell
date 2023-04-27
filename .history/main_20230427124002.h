@@ -67,14 +67,7 @@ typedef struct liststr
  * @fname: the program filename
  * @env: linked list local copy of environ
  * @environ: custom modified copy of environ from LL environment var
- * @history: the history node
- * @alias: the alias node
- * @env_changed: on if environ was changed
- * @status: the return status
- * @cmd_buf: address of pointer to cmd_buf, on if chaining
- * @cmd_buf_type: CMD_type ||, &&, ;
- * @readfd: the file descriptor from which to read line input
- * @historycount: the history line number count
+ * @
 */
 typedef struct passinfo
 {
@@ -92,19 +85,11 @@ typedef struct passinfo
     char **environ;
     int env_changed;
     int status;
+
     char **cmd_buf; /* pointer to cmd ; chain buffer, for memory management */
     int cmd_buf_type; /* CMD_type ||, &&, ; */
     int readfd;
     int histcount;
 } info_t;
-
-#define INFO_INIT \
-{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
-    0, 0, 0}
-/*file errors.c*/
-void _eputs(char *str);
-int _eputchar(char c);
-int _putfd(char c, int fd);
-int _putsfd(char *str, int fd);
 
 #endif
