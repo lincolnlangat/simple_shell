@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 			{
 				_eputs(argv[0]);
 				_eputs(": 0: Can't open ");
-				_eputs(argv[1]);
+				_eputs(av[1]);
 				_eputchar('\n');
 				_eputchar(BUF_FLUSH);
 				exit(127);
@@ -38,6 +38,6 @@ int main(int argc, char **argv)
 	}
 	populate_env_list(info);
 	read_history(info);
-	hsh(info, argv);
+	hsh(info, av);
 	return (EXIT_SUCCESS);
 }
